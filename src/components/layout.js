@@ -21,11 +21,11 @@ const Layout = ({ pageTitle, children }) => {
   `);
 
   return (
-    <div className="m-auto w-1/3">
+    <div className="m-auto">
       <title>
-        {pageTitle} | {data.site.siteMetadata.title}
+        Asa DeWeese | {pageTitle} 
       </title>
-      <header className={siteTitle}>{data.site.siteMetadata.title}</header>
+      <header className={siteTitle}>{data.site.siteMetadata.title} | is this the one</header>
       <nav>
         <ul className={navLinks}>
           <li className={navLinkItem}>
