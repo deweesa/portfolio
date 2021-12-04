@@ -4,7 +4,7 @@ import Layout from "../components/layout";
 import { StaticImage } from "gatsby-plugin-image";
 import "../styles/global.css";
 
-const imageDimension = "36";
+const imageDimension = "44";
 
 // markup
 const IndexPage = () => {
