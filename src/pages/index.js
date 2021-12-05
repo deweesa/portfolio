@@ -10,21 +10,23 @@ const imageDimension = "44";
 const IndexPage = () => {
   return (
     <Layout pageTitle="Home">
-      <figure className="bg-gray-300 p-8 rounded-md w-max m-auto">
+      <figure className="bg-gray-300  p-8 rounded-md w-max m-auto flex flex-row-reverse gap-x-4">
         <StaticImage
           className={
             "object-none rounded-full h-" +
             imageDimension +
             " w-" +
-            imageDimension +
-            " float-right"
+            imageDimension + ""
+            //" float-right"
           }
           alt="Me"
           src="../../headshot.jpeg"
         />
-        <div className="font-bold text-5xl">Hello, I'm Asa</div>
-        <div className="font-medium text-3xl">
-          I'm an aspiring developer from Kent, Washington
+        <div className="pl-4 text-center"> 
+          <div className="font-bold text-7xl">Hello, I'm Asa</div>
+          <div className="font-medium text-5xl max-w-prose">
+            I'm an aspiring developer from Kent, Washington
+          </div>
         </div>
       </figure>
     </Layout>
