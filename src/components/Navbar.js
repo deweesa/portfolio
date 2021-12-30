@@ -3,12 +3,37 @@ import { Link } from "gatsby";
 
 export default function Navbar() {
   const navLinkItem = "px-6";
+  const activeStyle = { color: "red" };
+  const navTabs = [
+    { name: "Home", endpoint: "/" },
+    { name: "About", endpoint: "/about" },
+    { name: "Blog", endpoint: "/blog" },
+  ];
 
   return (
     <nav>
-      <ul className="flex flex-row justify-end mb-3">
+      <ul className="flex flex-row justify-end my-3">
+        {navTabs.map((tabInfo) => {
+          return (
+            <li>
+              <Link
+                to={tabInfo.endpoint}
+                activeStyle={activeStyle}
+                className={navLinkItem}
+              >
+                {tabInfo.name}
+              </Link>
+            </li>
+          );
+        })}
+      </ul>
+    </nav>
+  );
+  /*return (
+    <nav>
+      <ul className="flex flex-row justify-end my-3">
         <li>
-          <Link to="/" className={navLinkItem}>
+          <Link to="/" activeStyle={activeStyle} className={navLinkItem}>
             Home
           </Link>
         </li>
@@ -24,5 +49,5 @@ export default function Navbar() {
         </li>
       </ul>
     </nav>
-  );
+  );*/
 }
