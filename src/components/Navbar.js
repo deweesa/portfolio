@@ -6,7 +6,7 @@ export default function Navbar() {
 
   return (
     <nav>
-      <ul className="flex flex-row justify-end mb-3 bg-red-900">
+      <ul className="flex flex-row justify-end mb-3">
         <li>
           <Link to="/" className={navLinkItem}>
             Home
