@@ -5,30 +5,28 @@ import { StaticImage } from "gatsby-plugin-image";
 import "../styles/global.css";
 
 const imageDimension = "44";
+const imageSource = "../../headshot.jpeg";
 
 // markup
 const IndexPage = () => {
   return (
     <Layout pageTitle="Home">
-      <figure className="bg-gray-300  p-8 rounded-md w-max m-auto flex flex-row-reverse gap-x-4">
-        <StaticImage
-          className={
-            "object-none rounded-full h-" +
-            imageDimension +
-            " w-" +
-            imageDimension + ""
-            //" float-right"
-          }
-          alt="Me"
-          src="../../headshot.jpeg"
-        />
-        <div className="pl-4 text-center"> 
-          <div className="font-bold text-7xl">Hello, I'm Asa</div>
-          <div className="font-medium text-5xl max-w-prose">
-            I'm an aspiring developer from Kent, Washington
+      <div className="px-24 flex flex-col justify-center items-center">
+        <div className="flex bg-gray-400 flex-row-reverse shadow-md rounded-md px-4 py-2">
+          <StaticImage
+            src={imageSource}
+            alt="Asa DeWeese"
+            className={"rounded-full w-" + imageDimension}
+          />
+          <div className="flex flex-col px-6 py-2 justify-center">
+            <h1>Hi, I'm Asa</h1>
+            <p>
+              I'm an aspiring developer, expereinced with Python, Java, C/C++
+              and learning Javascript
+            </p>
           </div>
         </div>
-      </figure>
+      </div>
     </Layout>
   );
 };
