@@ -19,8 +19,8 @@ const IndexPage = () => {
             className={"rounded-full w-" + imageDimension}
           />
           <div className="flex flex-col px-6 py-2 justify-center">
-            <h1>Hi, I'm Asa</h1>
-            <p>
+            <h1 className="text-7xl">Hi, I'm Asa</h1>
+            <p className="text-2xl max-w-lg">
               I'm an aspiring developer, expereinced with Python, Java, C/C++
               and learning Javascript
             </p>
