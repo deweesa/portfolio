@@ -1,23 +1,24 @@
 import * as React from "react";
 import { Link } from "gatsby";
-import { navLinks, navLinkItem, navLinkText } from "./layout.module.css";
 
 export default function Navbar() {
+  const navLinkItem = "px-6";
+
   return (
     <nav>
-      <ul className={navLinks}>
-        <li className={navLinkItem}>
-          <Link to="/" className={navLinkText}>
+      <ul className="flex flex-row justify-end mb-3 bg-red-900">
+        <li>
+          <Link to="/" className={navLinkItem}>
             Home
           </Link>
         </li>
-        <li className={navLinkItem}>
-          <Link to="/about" className={navLinkText}>
+        <li>
+          <Link to="/about" className={navLinkItem}>
             About
           </Link>
         </li>
-        <li className={navLinkItem}>
-          <Link to="/blog" className={navLinkText}>
+        <li>
+          <Link to="/blog" className={navLinkItem}>
             Blog
           </Link>
         </li>
