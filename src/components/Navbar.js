@@ -2,8 +2,11 @@ import * as React from "react";
 import { Link } from "gatsby";
 
 export default function Navbar() {
-  const navLinkItem = "px-6";
-  const activeStyle = { color: "red" };
+  const navLinkItem = "px-6 font-weight";
+  const activeStyle = {
+    /*color: "red"*/
+  };
+
   const navTabs = [
     { name: "Home", endpoint: "/" },
     { name: "About", endpoint: "/about" },
@@ -19,7 +22,7 @@ export default function Navbar() {
               <Link
                 to={tabInfo.endpoint}
                 activeStyle={activeStyle}
-                className={navLinkItem}
+                className="px-6 font-medium"
               >
                 {tabInfo.name}
               </Link>
