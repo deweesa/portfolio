@@ -25,7 +25,7 @@ const Layout = ({ pageTitle, children }) => {
     <div className="m-auto">
       <title>Asa DeWeese | {pageTitle}</title>
       <header className={siteTitle}>
-        {data.site.siteMetadata.title} | is this the one
+        {/*{data.site.siteMetadata.title} | is this the one*/}
       </header>
       <Navbar />
       <main>{children}</main>
