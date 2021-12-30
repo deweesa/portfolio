@@ -20,7 +20,7 @@ const IndexPage = () => {
           />
           <div className="flex flex-col px-6 py-2 justify-center">
             <h1 className="text-7xl">Hi, I'm Asa</h1>
-            <p className="text-2xl max-w-lg">
+            <p className="text-2xl max-w-2xl">
               I'm an aspiring developer, expereinced with Python, Java, C/C++
               and learning Javascript
             </p>
@@ -31,5 +31,4 @@ const IndexPage = () => {
   );
 };
 
-/*src="https://pbs.twimg.com/media/E1oMV3QVgAIr1NT?format=jpg&name=large"*/
 export default IndexPage;
